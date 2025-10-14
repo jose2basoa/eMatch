@@ -1,9 +1,13 @@
-import { View, Text } from 'react-native';
+import { View, Text, Button } from 'react-native';
 
-function TelaDescobrir() {
+function TelaDescobrir({ navigation }) {
     return (
         <View>
             <Text>Tela de Descobrir</Text>
+            <Button 
+            title="Ir para Login" 
+            onPress={() => navigation.navigate('Login')} 
+            />
         </View>
     );
 }
